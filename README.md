@@ -18,3 +18,32 @@ Este projeto implementa duas APIs em Java com Spring Boot, uma conectada ao Mong
 1. Clone o repositório:
    ```bash
    git clone https://github.com/seu-usuario/projeto-cadastro-usuarios.git
+   ```
+2. Compile as APIs:
+```bash
+cd api-mongodb && mvn clean package
+cd ../api-mysql && mvn clean package
+```
+
+3. Instale as dependências do frontend:
+```bash
+cd frontend && npm install
+```
+
+4. Suba os serviços com Docker:
+```bash
+cd .. && docker-compose up --build
+```
+
+5. Acesse o frontend em http://localhost:3000.
+
+
+## Funcionalidades
+- Cadastro de usuários com ID, Nome e Telefone.
+- Dados salvos simultaneamente no MongoDB e MySQL.
+- APIs containerizadas com Docker.
+
+## Tecnologias
+- Back-end: Java, Spring Boot, MongoDB, MySQL
+- Front-end: React
+- Containerização: Docker, Docker Compose
