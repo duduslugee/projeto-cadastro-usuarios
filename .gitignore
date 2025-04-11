@@ -1,0 +1,36 @@
+# Java/Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+.idea/
+*.iml
+.mvn/
+mvnw
+mvnw.cmd
+
+# Node.js/React
+node_modules/
+build/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# Bancos de dados
+*.sql
+*.mongo
+
+# Arquivos temporários
+*.swp
+*.swo
+*~
+
+# Outros
+.DS_Store
